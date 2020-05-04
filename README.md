@@ -10,8 +10,8 @@
 
 ## Good to Remember Points
 - One key can have only one value.
-- map.count() returns only an integer which tells whether the key exists in the map or not.
-- map.find() returns an iterator using which the value corresponding to the particular key can also be accessed.
+- *map.count()* returns only an integer which tells whether the key exists in the map or not.
+- *map.find()* returns an iterator using which the value corresponding to the particular key can also be accessed.
 - It's better to use map.count() if you just need to check whether key exists or not to save the space of an iterator.
 ## unordered_map
 - There is no ordering among keys.
