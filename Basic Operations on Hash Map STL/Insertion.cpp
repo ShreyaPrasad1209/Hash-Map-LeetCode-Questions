@@ -10,6 +10,7 @@ int main()
 
   map<int,int> m1{ {1,2} , {2,3} , {3,4} };
   
+  
   //Method 2:creates a map with keys of type character and values of type integer
       
   map<string,int> m2; 
@@ -21,7 +22,9 @@ int main()
     
 //Method 3: Explicitly inserting one pair at a time inside hash map 
  map<string,int> m3;
- m3.insert{make_pair("Apple", 20); 
+ m3.insert{make_pair("Apple", 20);
+           //OR
+ m3.insert( pair<char,int> ("Guava",5));          
  
  //Method 4: Implicitly inserting one pair at a time inside hash map 
   map<string,int>m4;
