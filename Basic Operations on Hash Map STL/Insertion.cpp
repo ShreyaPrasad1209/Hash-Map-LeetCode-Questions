@@ -32,5 +32,27 @@ int main()
   p.first="Mango";
   p.second=200;
   m4.insert(p);
+           
+  //Method 5: Using emplace(key,value) function
+  
+    // initialize container 
+    map<int, int> m5; 
+  
+    // insert elements in random order 
+    m5.emplace(2, 30);  
+    m5.emplace(1, 40); 
+    m5.emplace(2, 20); 
+    m5.emplace(1, 50); 
+    m5.emplace(4, 50);
+           
+    // prints the elements 
+    cout << "\nThe map is : \n"; 
+    cout << "KEY\tELEMENT\n"; 
+    for (auto itr = mp.begin(); itr != mp.end(); itr++) 
+        cout << itr->first << "\t" << itr->second << endl;        //Output: The map is : 
+// KEY    ELEMENT
+// 1    40
+// 2    30
+// 4    50     Notice that previous value is not getting substituted by new value on overriding it  
 return 0;
 }
