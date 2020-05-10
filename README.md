@@ -8,11 +8,15 @@
 
 [Hash Map STL in C++](https://www.studytonight.com/cpp/stl/stl-container-map)
 
-## Good to Remember Points
+## Important Points
 - One key can have only one value.
 - *map.count()* returns only an integer which tells whether the key exists in the map or not.
 - *map.find()* returns an iterator using which the value corresponding to the particular key can also be accessed.
 - It's better to use map.count() if you just need to check whether key exists or not to save the space of an iterator.
+- Insertion is done in [Amortised O(1)](https://www.geeksforgeeks.org/analysis-algorithm-set-5-amortized-analysis-introduction/) 
+
+## Implementation of STL Map
+It’s implemented as a self-balancing red-black tree. Probably the two most common self balancing trees are red-black tree and AVL trees. To balance the tree after an insertion/update both algorithms use the notion of rotations where the nodes of the tree are rotated to perform the re-balancing. While in both algorithms the insert/delete operations are O(log n), in the case of Red-Black tree re-balancing rotation is an O(1) operation while with AVL this is a O(log n) operation, making the RB tree more efficient in this aspect of the re-balancing sage and one of the possible reasons that is more commonly used
 ## unordered_map
 - There is no ordering among keys.
 - It is implemented using a Hash Table.
